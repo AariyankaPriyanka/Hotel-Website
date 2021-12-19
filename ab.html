@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>galary</title>
+        <link rel="stylesheet"  type="text/css">
+        
+        <style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+header{
+    height: 60px;
+    background: #262626;
+    padding: 0 50px;
+}
+
+
+.logo{
+        float:left;
+        padding: 10px;
+}
+
+nav{
+    width: 68%;
+    float:inline-start;
+}
+nav ul{
+    list-style: none;
+    float:right;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #069818;
+}
+
+
+a:hover
+{
+    color: rgb(35, 250, 53);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+.rooms{
+    margin: 40px 0;
+}
+.room{
+    margin: 45px 0;
+    padding-bottom: 25px;
+    background: var(--dark);
+    color: rgb(110, 23, 103);
+}
+.room-text{
+    padding: 5px 20px;
+}
+.room-text h3{
+    font-size: 24px;
+}
+.room-text ul{
+    list-style-type: none;
+    margin: 15px 0;
+}
+.room-text ul li{
+    padding: 7px 0;
+}
+.room-text ul li i{
+    color: var(--yellow);
+    margin-right: 10px;
+}
+.rate{
+    opacity: 0.8;
+}
+.rate span{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--yellow);
+}
+.room-image{
+    overflow: hidden;
+}
+.room-image img{
+    transition: var(--transition);
+}
+.room-image:hover img{
+    transform: scale(1.1);
+}
+@media (min-width: 900px){
+    .rooms-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .room{
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+@media(min-width: 1370px){
+    .rooms-container{
+        flex-direction: column;
+    }
+    .room{
+        display: flex;
+       padding-bottom: 0px;
+        margin: 5px 0;
+    }
+    .room-image{
+        flex: 1;
+        
+    }
+    .room-image img{
+        height: 100%;
+    }
+    .room-text{
+        flex: 1;
+    }
+    .room:nth-child(even){
+        flex-direction: row-reverse;
+    }
+}
+
+
+
+.banner{
+    height: 640vh;
+    width: 100%;
+    background-color: rgb(250, 246, 250);
+    background-size: cover;
+    background-position: center;
+}
+/* .banner img{
+    width: 100%;
+    height: 90vh;
+} */
+
+footer{
+    background: rgb(5, 5, 5);
+    color:rgb(252, 245, 245);
+    padding: 15px 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.heading
+{
+    height: 100vh;
+
+}
+.video-background
+{
+    position:sticky;
+    align-items: center;
+    min-width: 80%;
+    min-height: 50vh;
+    width: auto;
+    height: auto;
+    
+}
+
+
+.welcome-msg
+{
+    position: relative;
+    text-align: center;
+    font-family: 'Flamenco', cursive;
+    color: #000;
+    top: -50%;
+    border: 1px solid rgb(196, 247, 12);
+    border-style:double;
+    margin: 10px;
+    opacity: 1s;
+    border-radius: 75px;
+    
+}
+.welcome-msg h1
+{
+    color: orangered;
+    font-size: 2em;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+.welcome-msg p
+{
+    color: rgb(20, 245, 245);
+    font-size: 1em;
+    font-weight: 1em;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin: 20px;
+}
+
+
+
+
+        </style>
+    </head>
+    <body> 
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="logo1.png" width="50" height="50">
+               </div>
+                <ul>
+                    <li> <a href="home.html">HOME</a> </li>
+                    <li><a href="ab.html">ABOUTUS</a></li>
+                    <li><a href="galary.html">GALARY</a></li>
+                    <li><a href="reservation.html">RESERVATION</a></li>
+                    <li><a href="contact.html">CONTACTUS</a></li>
+                </ul>
+            </nav>
+
+            <section class="heading">
+                <video autoplay loop class="video-background" muted plays-inline>
+                    <source src="video.mp4" type="video/mp4"> 
+                </video>
+    
+                <div class="welcome-msg">
+                    <h1> AboutUs </h1>
+                    <p>
+                        <b>
+                            Located in the heart of Jaffna City, the AaLaSa Hotel beckons if you seek a modern and
+                        comfortable haven to unwind in after the breathless excitement and adventure of exploring
+                         the North. Its also perfect for business conferences and strategic meetings, due to its
+                       central location, professional services and modern facilities. It is literally an oasis
+                       of peace and greenery contrasting with the comparatively arid city, hosting as it does
+                       an area of lovingly tended landscaping flowering and leafy trees that cool the eye and
+                        calm the senses. The AaLaSa Hotel has 40 rooms and one penthouse for accommodation. The
+                       pool area is surrounded by cool foliage, and as a result visitors can escape the heat 
+                       and glare of the sun while privately indulging in a leisurely swim to cool their senses.
+                        Roaming in the hotel, you will meet Maaran, the tallest man in Sri Lanka who happens to 
+                        have worked here for the past so many years. Measuring up to 7’2 ft, he is the just one 
+                        of the friendly, cheerful and helpful staff members you will meet during your stay. Ask to 
+                        meet their charming French speaking bartender Ananthi who will mix you the smoothest of 
+                        beverages, and of course the Resident Manager Stanley who will be direct you to seeing the 
+                        not-to-be-missed sites of Jaffna. Try learning a bit of spoken Tamil from any of the staff
+                         who will be delighted to help.
+                        </b>
+                    </p>
+                </div>
+            </section>
+           
+            <section class = "rooms sec-width" id = "rooms">
+               <center>
+                <div class = "title">
+                    <h2>rooms</h2>
+                </div>
+               
+                <div class = "rooms-container">
+                    <!-- single room -->
+                    <article class = "room">
+                        <div class = "room-image">
+                            <img src = "img1.jpg" alt = "room image">
+                        </div>
+                        <div class = "room-text">
+                            <h3 style="color: rgb(167, 8, 82);">AaLaSa Double Rooms</h3>
+                            <br>
+            
+                            <p>You will not be short of anything in our comfort rooms. Upon entering it immediately feels warm and familiar. You have a comfortable bed, a private bathroom (with shower), TV, free WiFi and a modest sitting area.</p>
+                           <br>
+                            <h1>Room description</h1>
+                            <p>You will have everything you need in our 'basic' rooms. When entering it, the room immediately feels warm and familiar. You will have a lovely spacious bed, private bathroom (with shower or bath), TV, free WiFi and a modest seat. The basic rooms offer simplicity in style and the utmost attention has been paid for a pleasant stay. The rooms are situated in our souterrain. Here you can relax and start and end your day in peace and quiet. Naturally, you can enjoy some extra relaxation in our nice lounge area, with a good conversation at the bar or in a sunny spot on the terrace.</p>
+                           <br>
+                            <h1>Room facilities</h1>
+                            <ul>
+                                <li>Box spring bed(s)</li>
+                                <li>Private bathroom, with bath or shower</li>
+                                <li>TV (99 channels)</li>
+                                <li>Fan</li>
+                                <li>Desk</li>
+                                <li>Free WiFi</li>
+                                <li>Blackout curtains</li>
+                            </ul>
+                            <p class = "rate">
+                                <span>2500.00 /</span> one day 
+                            </p>
+                            <button style="background-color: rgb(247, 19, 125); color:rgb(245, 247, 132); border-radius: 50px;
+                            font-size: 40px; padding: 50px; padding-top: 10px; padding-right: 10px; padding-left: 10px;
+                             padding-bottom: 10px; font-family: sans-serif; clip-path: circle(55%);
+                             position: absolute;top:290%;left:180px;width: 400px;transform: translateY(-40%); ">Book now..!</button>
+                             <br><br>
+                        </div>
+                    </div>
+                    </article>
+                    <!-- end of single room -->
+                    <!-- single room -->
+                    <article class = "room">
+                        <div class = "room-image">
+                            <img src = "img3.jpg" alt = "room image">
+                        
+                        <div class = "room-text">
+                            <h3 style="color: rgb(167, 8, 82);">AaLaSa single Rooms</h3>
+                            <br>
+            
+                            <p>You will not be short of anything in our comfort rooms. Upon entering it immediately feels warm and familiar. You have a comfortable bed, a private bathroom (with shower), TV, free WiFi and a modest sitting area.</p>
+                           <br>
+                            <h1>Room description</h1>
+                            <p>You will not be short of anything in our comfort rooms. Upon entering it immediately feels warm and familiar. You have a comfortable bed, a private bathroom (with shower), TV, free WiFi and a modest sitting area. The single comfort rooms are located on the 1st and 2nd floor of the hotel. Here you can relax and start and end your day in peace. Of course for some additional enjoyment you can read a book in the lounge or have a good conversation at the bar or in a sunny spot on the terrace.</p>
+                           <br>
+                            <h1>Room facilities</h1>
+                            <ul>
+                                <li>Box spring bed</li>
+                                <li>Private bathroom with shower</li>
+                                <li>TV (99 channels)</li>
+                                <li>Fan</li>
+                                <li>Desk</li>
+                                <li>Free WiFi</li>
+                                <li>Blackout curtains</li>
+                            </ul>
+                            <p class = "rate">
+                                <span>1200.00 /</span> one day 
+                            </p>
+                            <button style="background-color: rgb(247, 19, 125); color:rgb(245, 247, 132); border-radius: 50px;
+                            font-size: 40px; padding: 50px; padding-top: 10px; padding-right: 10px; padding-left: 10px;
+                             padding-bottom: 10px; font-family: sans-serif; clip-path: circle(55%);
+                             position: absolute;top:465%;right: 480px;width: 400px;transform: translateY(-40%);">Book now..!</button>
+                             <br><br><br>
+                        </div>
+                    </div>
+                    </article>
+                    <!-- end of single room -->
+                    <!-- single room -->
+                    <article class = "room">
+                        <div class = "room-image">
+                            <img src = "img2.jpg" alt = "room image">
+                        </div>
+                        <div class = "room-text">
+                            <h3 style="color: rgb(167, 8, 82);">AaLaSa family Rooms</h3>
+                            <br>
+            
+                            <p>You will not be short of anything in our comfort rooms. Upon entering it immediately feels warm and familiar. You have a comfortable bed, a private bathroom (with shower), TV, free WiFi and a modest sitting area.</p>
+                           <br>
+                            <h1>Room description</h1>
+                            <p>You will have everything you need in our family rooms. It immediately feels warm and familiar when you enter. You will have lovely spacious beds, private bathroom (with shower or bath), TV, free WiFi and a modest seat. The basic rooms offer simplicity in style and the utmost attention has been paid for a pleasant stay. Here you can relax and start and end your day in peace and quiet. Naturally, you can enjoy some extra relaxation in our nice lounge area, with a drink at the bar or in a sunny spot on the terrace.</p>
+                           <br>
+                            <h1>Room facilities</h1>
+                            <ul>
+                                <li>Box spring bed</li>
+                                <li>Private bathroom with shower</li>
+                                <li>TV (99 channels)</li>
+                                <li>Fan</li>
+                                <li>Desk</li>
+                                <li>Free WiFi</li>
+                                <li>Blackout curtains</li>
+                            </ul>
+                            <p class = "rate">
+                                <span>5000.00 /</span> one day 
+                            </p>
+                            <button style="background-color: rgb(247, 19, 125); color:rgb(245, 247, 132); border-radius: 50px;
+                            font-size: 40px; padding: 50px; padding-top: 10px; padding-right: 10px; padding-left: 10px;
+                             padding-bottom: 10px; font-family: sans-serif; clip-path: circle(55%);
+                             position: absolute;top:640%;right: 480px;width: 400px;transform: translateY(-40%);">Book now..!</button>
+                             <br><br><br>
+                        </div>
+                    </div>
+                    </article>
+                    <!-- end of single room -->
+                </div>
+               </center>
+            </section>
+
+           
+</header>
+<div class="banner">
+</div>
+
+<footer>
+    <p>All right reserved by our AaLaSa Hotel</p>
+</footer>
+
+</body>
+
+</html>
+ 

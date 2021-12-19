@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact</title>
+        <link rel="stylesheet"  type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+header{
+    height: 60px;
+    background: #262626;
+    padding: 0 50px;
+}
+
+
+.logo{
+        float:left;
+        padding: 10px;
+}
+
+nav{
+    width: 68%;
+    float:inline-start;
+}
+nav ul{
+    list-style: none;
+    float:right;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #069818;
+}
+
+
+a:hover
+{
+    color: rgb(35, 250, 53);
+}
+
+.banner{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(54, 58, 49, 0.71), rgba(57, 68, 54, 0.71)),  url("bg6.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.banner img{
+    width: 100%;
+    height: 90vh;
+}
+
+footer{
+    background: rgb(5, 5, 5);
+    color:rgb(252, 245, 245);
+    padding: 15px 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px ;
+    top: 220px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0px;
+    padding-top: 20px;
+	background: url("bg.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("bgg.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: rgb(172, 27, 147);
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: rgb(241, 58, 104);
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: rgb(241, 146, 221);
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: rgba(240, 11, 11, 0.425);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text h3{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(141, 2, 2);
+    font-weight: 500;
+}
+.container .contactInfo .box .text p{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(3, 3, 3);
+    font-weight: 300;
+}
+
+        </style>
+    </head>
+    <body>
+      
+        <header>
+            
+            <nav>
+                <div class="logo">
+                    <img src="logo1.png" width="50" height="50" >
+               </div>
+                <ul>
+                    <li> <a href="home.html">HOME</a> </li>
+                    <li><a href="ab.html">ABOUTUS</a></li>
+                    <li><a href="galary.html">GALARY</a></li>
+                    <li><a href="reservation.html">RESERVATION</a></li>
+                    <li><a href="contact.html">CONTACTUS</a></li>
+                </ul>
+            </nav>
+
+            <div class="container">
+
+               
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3><b>Address</b></h3>
+                                <p><b>No-1, Aari lane,<br>Chavakachcheri North,<br>Meesalai. <br>Jaffna</b></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3><b>Phone</b></h3>
+                                <p><b>+94-766082446</b></p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></i></div>
+                            <div class="text">
+                                <h3><b>Email</b></h3>
+                                <p><b>aalasa.hotel@gmail.com</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <div class="contact-box">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2>Contact Us</h2>
+                        <input type="text" class="field" placeholder="Your Name" required="">
+                        <input type="text" class="field" placeholder="Your Email" required="">
+                        <input type="text" class="field" placeholder="Phone" required="">
+                        <textarea placeholder="Message" class="field" required=""></textarea>
+                        <button class="btn">Send</button>
+                    </div>
+                </div>
+            </div>
+            
+</header>
+<div class="banner">
+</div>
+
+<footer>
+    <p>All right reserved by our AaLaSa Hotel</p>
+</footer>
+
+</body>
+
+</html>
+ 
